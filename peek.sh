@@ -2,6 +2,10 @@
 
 # Prints three head and three tail of input file
 
-head -n$2 $1
+
+length=${2:-3}
+echo $length
+
+head -n$length $1
 echo ...
-tail -n$2 $1
+tail -n$length $1
